@@ -54,18 +54,18 @@ const config = {
     },
 
     // {
-    //   name: 'firefox',
-    //   use: {
-    //     ...devices['Desktop Firefox'],
-    //   },
+    //    name: 'firefox',
+    //    use: {
+    //      ...devices['Desktop Firefox'],
+    //    },
     // },
 
     // {
-    //   name: 'webkit',
+    //    name: 'webkit',
     //   use: {
-    //     ...devices['Desktop Safari'],
-    //   },
-    // },
+    //      ...devices['Desktop Safari'],
+    //    },
+    //  },
 
     /* Test against mobile viewports. */
     // {
