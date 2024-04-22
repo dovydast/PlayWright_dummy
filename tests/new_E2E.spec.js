@@ -5,6 +5,8 @@ import { Navigation } from "../page-objects/Navigation"
 import { CheckoutPage } from "../page-objects/CheckoutPage"
 import { LoginPage } from "../page-objects/LoginPage"
 import { RegisterPage } from "../page-objects/RegisterPage"
+import { DeliveryDetailsPage } from "../page-objects/DeliveryDetailsPage";
+import { deliveryDetails as userAddress } from "./../data/deliveryDetails"
 
 
 test.only("New user full end-to-end test journery", async ({ page }) =>{
@@ -13,6 +15,7 @@ test.only("New user full end-to-end test journery", async ({ page }) =>{
     const checkoutPage = new CheckoutPage(page)
     const loginPage = new LoginPage(page)
     const registerPage = new RegisterPage(page)
+    const deliveryDetails = new DeliveryDetailsPage(page)
 
     await productsPage.visit()
     await productsPage.sortByCheapest()
@@ -29,4 +32,5 @@ test.only("New user full end-to-end test journery", async ({ page }) =>{
     const email = uuidv4() + "@gmail.com"
     const password = uuidv4()
     await registerPage.signUpAsNewUser(email, password)
+    await deliveryDetails.fillDeliveryDetails(userAddress)
 })
