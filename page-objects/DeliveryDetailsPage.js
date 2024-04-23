@@ -21,10 +21,15 @@ export class DeliveryDetailsPage {
     }
 
     fillDeliveryDetails = async (userAddress) => {
+        await this.firstNameInput.waitFor()
         await this.firstNameInput.fill(userAddress.firstName)
+        await this.lastNameInput.waitFor()
         await this.lastNameInput.fill(userAddress.lastName)
+        await this.streetInput.waitFor()
         await this.streetInput.fill(userAddress.street)
+        await this.postcodeInput.waitFor()
         await this.postcodeInput.fill(userAddress.postcode)
+        await this.cityInput.waitFor()
         await this.cityInput.fill(userAddress.city)
         await this.selectOption.selectOption(userAddress.country)
     }

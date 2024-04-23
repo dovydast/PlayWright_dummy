@@ -9,8 +9,6 @@ export class ProductsPage {
         this.addButtons = page.locator('[data-qa="product-button"]')
         this.dropdown = page.locator('[data-qa="sort-dropdown"]')
         this.productTitle = page.locator('[data-qa="product-title"]')
-
-       
     }
 
     visit = async () => {
