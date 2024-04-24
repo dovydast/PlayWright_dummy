@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test --reporter=html"
+    "test": "playwright test --headed"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,8 @@
     "@playwright/test": "^1.43.1"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-fetch": "^2.6.7",
     "uuid": "^9.0.0"
   }
 }

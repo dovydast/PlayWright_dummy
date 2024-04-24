@@ -11,7 +11,7 @@ import { paymentDetails as creditCardDetails } from "../data/paymentDetails";
 import { PaymentPage } from "../page-objects/PaymentPage";
 
 
-test.only("New user full end-to-end test journery", async ({ page }) =>{
+test("New user full end-to-end test journery", async ({ page }) =>{
     const productsPage = new ProductsPage(page)
     const navigation = new Navigation(page)
     const checkoutPage = new CheckoutPage(page)
