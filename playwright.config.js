@@ -47,19 +47,19 @@ const config = {
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'chromium',
-      use: {
-        ...devices['Desktop Chrome'],
-      },
-    },
-
     // {
-    //    name: 'firefox',
-    //    use: {
-    //      ...devices['Desktop Firefox'],
-    //    },
+    //   name: 'chromium',
+    //   use: {
+    //     ...devices['Desktop Chrome'],
+    //   },
     // },
+
+    {
+       name: 'firefox',
+       use: {
+         ...devices['Desktop Firefox'],
+       },
+    },
 
     // {
     //    name: 'webkit',
@@ -83,18 +83,18 @@ const config = {
     // },
 
     /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: {
-    //     channel: 'msedge',
-    //   },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: {
-    //     channel: 'chrome',
-    //   },
-    // },
+    {
+      name: 'Microsoft Edge',
+      use: {
+        channel: 'msedge',
+      },
+    },
+    {
+      name: 'Google Chrome',
+      use: {
+        channel: 'chrome',
+      },
+    },
   ],
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
